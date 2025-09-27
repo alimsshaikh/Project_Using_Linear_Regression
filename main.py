@@ -7,6 +7,8 @@ app = Flask(__name__)
 # Load trained model
 model = pickle.load(open("Build_new_model_Medical_insurance.pkl", "rb"))
 
+print("Changes are done")
+
 @app.route("/")
 def home():
     # This will look for templates/index.html
